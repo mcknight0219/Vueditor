@@ -1,0 +1,46 @@
+{
+  "name": "vueditor",
+  "version": "0.1.0",
+  "description": "A markdown editor for Vue.js",
+  "main": "dist/vueditor.js",
+  "scripts": {
+    "dev": "cross-dev NODE_ENV=development webpack-dev-server --config ./build/webpack.dev.js --open --inline --hot",
+    "build": "webpack --config build/webpack.dist.js",
+    "build:examples": "webpack --config ./build/webpack.examples.js",
+    "clean": "rimraf ./examples/examples.bundle.css ./examples/examples.bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "gith+https://github.com/mcknight0219/vueditor.git"
+  },
+  "author": "Qiang Guo <mcknight0219@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.0.1",
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-plugin-transform-es2015-destructuring": "^6.19.0",
+    "babel-plugin-transform-es2015-parameters": "^6.18.0",
+    "babel-plugin-transform-object-rest-spread": "^6.19.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-es2015": "^6.0.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "cross-env": "^3.0.0",
+    "css-loader": "^0.25.0",
+    "deep-assign": "^2.0.0",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "node-sass": "^4.5.2",
+    "rimraf": "^2.6.1",
+    "sass-loader": "^6.0.3",
+    "vue": "^2.2.6",
+    "vue-loader": "^11.3.3",
+    "vue-style-loader": "^3.0.0",
+    "vue-template-compiler": "^2.2.6",
+    "webpack": "^2.4.1",
+    "webpack-bundle-analyzer": "^2.2.1",
+    "webpack-dev-server": "^2.4.2"
+  }
+}
